@@ -4,7 +4,7 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAjyq81nNDoGBNs1nG0ujU-3Vliyn0o2oI",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "clone-practice-6f062.firebaseapp.com",
   projectId: "clone-practice-6f062",
   storageBucket: "clone-practice-6f062.appspot.com",
