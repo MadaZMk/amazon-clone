@@ -5,12 +5,12 @@ import 'firebase/compat/firestore';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: "clone-practice-6f062.firebaseapp.com",
-  projectId: "clone-practice-6f062",
-  storageBucket: "clone-practice-6f062.appspot.com",
-  messagingSenderId: "1033540927995",
-  appId: "1:1033540927995:web:9258b4e4c7141b4d4f4b5e",
-  measurementId: "G-B6QYVT11FC",
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // initialize the firebase app with firebase config
