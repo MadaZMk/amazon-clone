@@ -1,0 +1,65 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-height: 400px;
+  min-width: 100px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 15px;
+  overflow-x: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: box-shadow 0.9s, transform 0.9s; /* Smooth transition */
+}
+
+.product:active {
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+  transform: translateY(9); /* Reset lift on click */
+}
+.product:hover {
+  box-shadow: rgb(205, 205, 205);
+  transform: translateY(-9px); 
+}
+
+.product:focus {
+  box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4); /* Custom focus ring */
+}
+.product__rating {
+  display: flex;
+  color: #f3e854;
+}
+
+.product > img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product > button {
+  background: #E8F5E9;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #7BE7D8 #FF00FF #0000CD #EE82EE;
+  color: #111;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.product:hover > button {
+  background-color: #FFF9C4;
+  border-color:   #7be7d8 #ff00ff #FFB6C1 #0000cd;
+}
+
+.product__price {
+  margin-top: 5px;
+}
+
+.product__info {
+  height: 100px;
+  margin-bottom: 15px;
+}
